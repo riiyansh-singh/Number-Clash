@@ -10,7 +10,7 @@ You can share the pure, full-screen game directly with friends, players, and fam
 
 👉 **[Play Number Clash Live](https://number-clash.ai.studio/)**
 
-> **URL:** `https://ais-pre-k5pfwqhb63lrfmo7jal7hh-974727901905.asia-east1.run.app`  
+> **URL:** `https://number-clash.ai.studio/`  
 > *Anyone with this link can open the game in their mobile or desktop browser, create/join multiplayer rooms with 6-character room codes, and play in real time.*
 
 ---
