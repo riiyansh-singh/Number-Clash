@@ -1,0 +1,8 @@
+{
+  "name": "Number Clash",
+  "description": "A modern, high-intensity multiplayer number guessing game. Play solo, battle smart AI, challenge friends in live war rooms, and climb global leaderboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

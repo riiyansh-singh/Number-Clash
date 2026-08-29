@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch ? window.fetch.bind(window) : null;
+          var currentFetch = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return currentFetch || originalFetch;
+            },
+            set: function(fn) {
+              currentFetch = fn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // Ignore if cannot redefine
+        }
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0f19" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" type="image/jpeg" href="/app-icon.jpg" />
+    <link rel="apple-touch-icon" href="/app-icon.jpg" />
+    <title>Number Clash — The Ultimate Number Guessing Battle Arena</title>
+    <meta name="description" content="A modern, high-intensity multiplayer number guessing game. Play solo, battle smart AI, challenge friends in live war rooms, and climb global leaderboards." />
+    <meta property="og:title" content="Number Clash — The Ultimate Number Guessing Battle Arena" />
+    <meta property="og:description" content="Play solo, battle smart AI, challenge friends in live war rooms, and climb global leaderboards." />
+    <meta property="og:image" content="/app-icon.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-[#080b12] text-slate-100 antialiased selection:bg-cyan-500 selection:text-black overflow-x-hidden min-h-screen font-['Plus_Jakarta_Sans',sans-serif]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
